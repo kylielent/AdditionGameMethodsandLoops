@@ -1,11 +1,9 @@
 #Project 2
 # AdditionGameMethodsandLoops 
 
-## The addition game
-
 ##Introduction
-
-##References and Literature
+This is code that uses a for loop, a custom method call and an array on our earlier addition game.
+This process is used in eclipse and through github.
 
 ##Code
 ```java
@@ -16,14 +14,13 @@
 ```
 
 ##Command Prompt
-Microsoft Windows [Version 6.1.7601]
-Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
-
+```
+This is my flashdrive
 C:\Users\LAB>E:
 
+I type dir to see the directory of my files
 E:\>dir
- Volume in drive E is STORE N GO
- Volume Serial Number is 0012-D687
+
 
  Directory of E:\
 
@@ -38,11 +35,11 @@ E:\>dir
                0 File(s)              0 bytes
                8 Dir(s)   3,521,880,064 bytes free
 
+I type cd to choose what folder I want to be in
 E:\>cd AdditionGameMethodsandLoops
 
+I type dir again to see the directory inside that folder
 E:\AdditionGameMethodsandLoops>dir
- Volume in drive E is STORE N GO
- Volume Serial Number is 0012-D687
 
  Directory of E:\AdditionGameMethodsandLoops
 
@@ -56,8 +53,6 @@ E:\AdditionGameMethodsandLoops>dir
 E:\AdditionGameMethodsandLoops>cd AdditionGame
 
 E:\AdditionGameMethodsandLoops\AdditionGame>dir
- Volume in drive E is STORE N GO
- Volume Serial Number is 0012-D687
 
  Directory of E:\AdditionGameMethodsandLoops\AdditionGame
 
@@ -70,18 +65,19 @@ E:\AdditionGameMethodsandLoops\AdditionGame>dir
                2 File(s)            620 bytes
                4 Dir(s)   3,521,880,064 bytes free
 
-E:\AdditionGameMethodsandLoops\AdditionGame>git add .
-fatal: Not a git repository (or any of the parent directories): .git
-
+Here I create the read me file for my repository
 E:\AdditionGameMethodsandLoops\AdditionGame>echo # AdditionGameMethodsandLoops >
 > README.md
 
+I type git init to intialize the repository into my flashdrive
 E:\AdditionGameMethodsandLoops\AdditionGame>git init
 Initialized empty Git repository in E:/AdditionGameMethodsandLoops/AdditionGame/
 .git/
 
+Here I add the readme
 E:\AdditionGameMethodsandLoops\AdditionGame>git add README.md
 
+Here I commit what I have just done
 E:\AdditionGameMethodsandLoops\AdditionGame>git commit -m "first commit"
 
 *** Please tell me who you are.
@@ -96,20 +92,26 @@ Omit --global to set the identity only in this repository.
 
 fatal: unable to auto-detect email address (got 'LAB@STF126H-PC.(none)')
 
+Here I configure my username and email because I forgot to earlier
 E:\AdditionGameMethodsandLoops\AdditionGame>git config user.name "kylielent"
 
 E:\AdditionGameMethodsandLoops\AdditionGame>git config user.email "lentk@student
 .swosu.edu"
 
+Then i re-commit what I did earlier
 E:\AdditionGameMethodsandLoops\AdditionGame>git commit -m "first commit"
 [master (root-commit) 722e994] first commit
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
 
+Here I add to the origin
 E:\AdditionGameMethodsandLoops\AdditionGame>git remote add origin https://github
 .com/kylielent/AdditionGameMethodsandLoops.git
 
+Here I push to the origin master
 E:\AdditionGameMethodsandLoops\AdditionGame>git push -u origin master
+
+Here I login to github with my username and password
 Username for 'https://github.com': kylielent
 Password for 'https://kylielent@github.com':
 Counting objects: 3, done.
@@ -119,8 +121,11 @@ To https://github.com/kylielent/AdditionGameMethodsandLoops.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 
+
+Here I add what I have been working on
 E:\AdditionGameMethodsandLoops\AdditionGame>git add .
 
+Here I commit the changes
 E:\AdditionGameMethodsandLoops\AdditionGame>git commit -m "code is working."
 [master 1aa313f] code is working.
  4 files changed, 95 insertions(+)
@@ -129,6 +134,7 @@ E:\AdditionGameMethodsandLoops\AdditionGame>git commit -m "code is working."
  create mode 100644 bin/AdditonGameMethodsandLoops.class
  create mode 100644 src/AdditonGameMethodsandLoops.java
 
+Here I push to the master branch
 E:\AdditionGameMethodsandLoops\AdditionGame>git push
 warning: push.default is unset; its implicit value has changed in
 Git 2.0 from 'matching' to 'simple'. To squelch this message
@@ -151,6 +157,7 @@ See 'git help config' and search for 'push.default' for further information.
 (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
 'current' instead of 'simple' if you sometimes use older versions of Git)
 
+Here I login again
 Username for 'https://github.com': kylielent
 Password for 'https://kylielent@github.com':
 Counting objects: 8, done.
@@ -162,8 +169,10 @@ To https://github.com/kylielent/AdditionGameMethodsandLoops.git
    722e994..1aa313f  master -> master
 
 E:\AdditionGameMethodsandLoops\AdditionGame>
-
+We are done!
+```
 
 ##Summary
+The purpose of this project was to take what we have done with for loops, methods and arrays and apply it to the additon game. Which is an easy assignment that we pull for a lot of our projects to experiment on more.
 
 
