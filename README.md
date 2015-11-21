@@ -7,12 +7,114 @@ This process is used in eclipse and through github.
 
 ##Code
 ```java
+import java.util.Scanner;
+public class AdditonGameMethodsandLoops {
+public static void main(String[] args) {
+						
+		//Call the addition game method.
+		AdditonGameMethod();}
+					
+		public static void AdditonGameMethod() {
+		int[] gameVariables = new int[4];
+		gameVariables[0] = 5; //This is hardness
+		gameVariables[1] = 2; //This is hardness step
+		gameVariables[2] = 0; //This is the score
+		gameVariables[3] = 0; // 1 for true, 0 for false
+						
+		// Set up my for loop 
+		int numberOfRounds = 4;
+			for(int NumberoftheRound = 1; 
+				NumberoftheRound <= numberOfRounds;  
+				NumberoftheRound = NumberoftheRound + 1){
+		System.out.print("Round " + NumberoftheRound + " of " + numberOfRounds + ". ");
+		gameVariables = getAndCheckStudentAnswer(gameVariables);
+			if(gameVariables[3] == 1){
+				System.out.print("Your score was " + gameVariables[2] + " and is now ");
+				gameVariables[2] = gameVariables[2] + gameVariables[0];
+				System.out.print(gameVariables[2] + ". ");
+								
+			if(NumberoftheRound<numberOfRounds){
+				System.out.print("Your hardness was " + gameVariables[0] + " and is now ");
+				gameVariables[0] = gameVariables[0] * gameVariables[1];
+				System.out.println(gameVariables[0] + ".");
+								}
+			}else{
+				System.out.print("Your score is " + gameVariables[2] + ". ");
+					if(NumberoftheRound<numberOfRounds){
+					System.out.print("Your hardness was " + gameVariables[0] + " and is now ");
+							if(gameVariables[0]>5){
+								gameVariables[0] = gameVariables[0] / gameVariables[1];
+									}
+				System.out.println(gameVariables[0] + ".");					
+				}				
+			    }
+				}
+						System.out.print("\nThe game is complete. ");
+						System.out.println("Your final score was " + gameVariables[2] );
+			    }	
+		public static int[] getAndCheckStudentAnswer(int[] gameVariables) {
+		int Num_1 = (int)(Math.random()*gameVariables[0]);
+		int Num_2 = (int)(Math.random()*gameVariables[0]);
+		System.out.print("Add " + Num_1 + " and " + Num_2 +": ");
+		Scanner get = new Scanner(System.in);
+		int studentAnswer = get.nextInt();
+			if(studentAnswer == (Num_1 + Num_2)){
+				System.out.print("Correct. ");
+				gameVariables[3] = 1;
+							
+			}else{
+				System.out.println("Nice try, but the correct answer was " 
+				+ (Num_1 + Num_2) + ".");
+				gameVariables[3] = 0;
+				}
+			return gameVariables;
+				}
+				}
 ```
 
 ##Console
+Testing for all correct numbers
 ```java
+Round 1 of 4. Add 2 and 1: 3
+Correct. Your score was 0 and is now 5. Your hardness was 5 and is now 10.
+Round 2 of 4. Add 3 and 6: 9
+Correct. Your score was 5 and is now 15. Your hardness was 10 and is now 20.
+Round 3 of 4. Add 12 and 18: 30
+Correct. Your score was 15 and is now 35. Your hardness was 20 and is now 40.
+Round 4 of 4. Add 12 and 30: 42
+Correct. Your score was 35 and is now 75. 
+The game is complete. Your final score was 75
 ```
-
+Testing for all wrong answers
+```
+Round 1 of 4. Add 1 and 4: 3
+Nice try, but the correct answer was 5.
+Your score is 0. Your hardness was 5 and is now 5.
+Round 2 of 4. Add 4 and 1: 3
+Nice try, but the correct answer was 5.
+Your score is 0. Your hardness was 5 and is now 5.
+Round 3 of 4. Add 4 and 4: 0
+Nice try, but the correct answer was 8.
+Your score is 0. Your hardness was 5 and is now 5.
+Round 4 of 4. Add 0 and 3: 5
+Nice try, but the correct answer was 3.
+Your score is 0. 
+The game is complete. Your final score was 0
+```
+Testing for two right and two wrong
+```
+Round 1 of 4. Add 4 and 0: 4
+Correct. Your score was 0 and is now 5. Your hardness was 5 and is now 10.
+Round 2 of 4. Add 8 and 1: 9
+Correct. Your score was 5 and is now 15. Your hardness was 10 and is now 20.
+Round 3 of 4. Add 7 and 2: 0
+Nice try, but the correct answer was 9.
+Your score is 15. Your hardness was 20 and is now 10.
+Round 4 of 4. Add 3 and 7: 0
+Nice try, but the correct answer was 10.
+Your score is 15. 
+The game is complete. Your final score was 15
+```
 ##Command Prompt
 ```
 This is my flashdrive
